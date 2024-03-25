@@ -1,0 +1,69 @@
+.friendMessage {
+  float: left;
+
+  margin-bottom: 47px;
+
+  max-width: 575px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.friendImageAndText {
+  max-width: 414px;
+  width: 100%;
+  height: 60px;
+  padding: 8px 13px;
+  display: flex;
+  background-color: rgba(245, 247, 251, 1);
+
+  position: relative;
+
+  
+}
+
+.friendImageAndText img {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+
+  left: -50px;
+  top: 12px;
+}
+
+.friendText {
+  position: relative;
+  color: rgba(0, 0, 0, 1);
+}
+
+.friendText:after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  bottom: -9px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent; /* Розмір і напрямок трикутника */
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid rgba(245, 247, 251, 1); /* Колір і висота трикутника */
+}
+
+.friendName {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.friendMessageText {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.friendTime {
+  align-self: self-start;
+}

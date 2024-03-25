@@ -1,0 +1,25 @@
+.sendForm {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.textarea {
+  width: 976px;
+  min-height: 40px;
+  background-color: rgba(245, 247, 251, 1);
+  border-radius: 15px;
+}
+
+.button {
+  width: 120px;
+  background-color: rgba(0, 102, 204, 1);
+  border-radius: 18px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.button:active {
+  background-color: aqua;
+}

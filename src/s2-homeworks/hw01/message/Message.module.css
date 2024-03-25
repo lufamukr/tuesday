@@ -1,0 +1,62 @@
+.message {
+  max-width: 575px;
+  width: 100%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 47px;
+  position: relative;
+}
+
+.imageAndText {
+  max-width: 527px;
+  width: 100%;
+  height: 60px;
+  padding: 8px 13px;
+  display: flex;
+  flex-direction: row-reverse;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 102, 204, 1);
+}
+
+.imageAndText img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+
+.text {
+  position: relative;
+}
+
+.text:after {
+  content: '';
+  position: absolute;
+  right: -24px;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent; /* Розмір і напрямок трикутника */
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid rgba(0, 102, 204, 1); /* Колір і висота трикутника */
+}
+
+.name {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.messageText {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.time {
+  align-self: end;
+}
