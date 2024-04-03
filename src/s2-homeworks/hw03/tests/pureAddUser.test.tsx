@@ -9,7 +9,7 @@ let error: any
 const setError = (a: any) => {
     error = a
 }
-let added: any
+let added: boolean
 const addUserCallback = () => {
     added = true
 }
