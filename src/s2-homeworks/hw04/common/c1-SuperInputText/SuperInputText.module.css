@@ -1,20 +1,35 @@
 .input:focus {
+  cursor: context-menu;
 }
 
 .input {
+  border: 1px solid rgba(209, 209, 209, 0.2);
+  width: 372px;
+  height: 36px;
+  outline: none;
+  border-radius: 5px;
 }
 
 .inputWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
 }
 
 .superInput {
+  border: 1px solid rgba(209, 209, 209, 1);
 }
 
 .errorInput {
+  border: 1px solid rgba(204, 20, 57, 1);
 }
 
 .errorInput:focus {
+  cursor: pointer;
 }
 
 .error {
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(204, 20, 57, 1);
 }
