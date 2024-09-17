@@ -60,8 +60,8 @@ const HW1 = () => {
     }
 
     return (
-        <div id={'hw1'}>
-            <div className={s2.hwTitle}>Homework #1</div>
+        <div id={'hw1'} style={{paddingTop:"60px"}}>
+            <div className={s2.hwTitle}>Hometask № 1</div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div style={divStyle}>
