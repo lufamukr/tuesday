@@ -18,12 +18,17 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
     }
 ) => {
     const finalClassName = s.button
-        + (disabled
-                ?   ' ' + s.disabled
-                : ' ' + s.default)
-        + ( xType === 'red' ? ' ' + s.red : ' ' + s.secondary)
-        + (className ? ' ' + className : '') // задачка на смешивание классов
-        console.log(finalClassName)
+    + (disabled
+        ? ' ' + s.disabled  // Якщо кнопка disabled, додаємо відповідний клас
+        : xType === 'red'
+          ? ' ' + s.red  // Якщо xType рівне 'red', додається клас для червоної кнопки
+          : xType === 'secondary'
+            ? ' ' + s.secondary  // Якщо xType рівне 'transparent', додається прозора кнопка
+            : ' ' + s.default  // В іншому випадку додаємо синю кнопку
+    )
+    + (className ? ' ' + className : '');  // Якщо є додатковий className, додаємо його
+
+    console.log(finalClassName)
 
     return (
         <button
