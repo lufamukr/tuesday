@@ -1,40 +1,23 @@
 .radio {
   width: 24px;
   height: 24px;
-  position: relative;
-  appearance: none; /* Вимикає стандартний вигляд радіо-кнопок */
-  border: 2px solid #000; /* Стиль зовнішнього кола */
-  border-radius: 50%;
-  outline: none;
   cursor: pointer;
-  transition: border-color 0.2s ease;
 }
 
 .radio::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent; /* Початково прозоре коло */
-  transition: background-color 0.2s ease;
+  background-color: aliceblue;
 }
 
 
 .radio:checked::before {
-  background-color: #000000;
+  color: black
 }
 
 .label {
   display: flex;
-  gap: 11px;
+  gap: 15px;
 }
 
 .options {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  font-size: 20px;
 }
